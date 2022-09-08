@@ -30,8 +30,6 @@ class Usuario extends Conexao
             
             $sql = $this->pdo->prepare("INSERT INTO usuarios
             (nome,email,senha) VALUES (:nome,:email,:senha)
-            VALUES
-            (:nome, :email, :senha)
             ");
             //mesclar dados ou tratar
             $sql->bindParam(':nome',$dados['nome']);

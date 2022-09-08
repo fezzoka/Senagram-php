@@ -27,6 +27,7 @@
         require_once('inc/js.php'); 
     ?>
     <!-- /JS -->
+
 </head>
 <body>
     <div class="container">
@@ -71,6 +72,13 @@
                             class="btn btn-danger"
 >
 Editar
+</a>
+                        </td>
+                        <td>
+                        <a href="<?php echo URL ?>/usuariodeletar.php?id=<?php echo $usuario -> id_usuario;?>"
+                            class="btn btn-primary"
+>
+Deletar
 </a>
                         </td>
                         <td>
