@@ -50,10 +50,11 @@
                         <th>Açoes</th>
                         <th>ID</th>
                         <th>postagem</th>
+                        <th>User</th>
                         <th>Data</th>
                         <th>Descricao</th>
                         <th>Gostei</th>
-                        <th>NaoGostei</th>
+                        <th>Não Gostei</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -86,6 +87,16 @@ Deletar
                         </td>
                         <td>
                             <?php echo $postagem->dt; ?>
+                        </td>
+                        <td>
+<?php
+if ($postagem->foto != '')
+{
+    echo '<img src="'.URL.'imagens/'.$postagem->foto.'">';
+}
+echo nl2br($postagem->descricao);
+?>
+
                         </td>
                         <td>
                             <?php echo nl2br($postagem->descricao); ?>
